@@ -11,4 +11,7 @@ router.route('/wishlist').post(wishlistCtrl.newWishlist);
 router.route('/wishlist').get(wishlistCtrl.getAllWishlists);
 router.route('/wishlist/product/add').put(wishlistCtrl.addProductToWishlist);
 
+router.route('/cart/product/add').put(cartCtrl.addProductToCart);
+router.route('/cart/product/remove').put(cartCtrl.removeProductFromCart);
+
 module.exports = router;
